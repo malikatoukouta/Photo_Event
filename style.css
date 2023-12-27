@@ -450,11 +450,14 @@ h1 {
     text-transform: uppercase;
     font-family: 'Space Mono';
   }
+  .burger{
+    display: none;
+  }
 
 @media screen and (max-width: 800px) {
     .header.header {
-      flex-direction: column;
-      padding: 0;
+      flex-direction: row;
+      padding: 25px;
       height: auto;
     }
     .colonne {
@@ -522,6 +525,16 @@ h1 {
     flex-direction: column;
   }
   .button-photos {
+    display: none;
+  }
+  .croix_burger{
+    display: none;
+  }
+  .burger {
+    cursor: pointer;
+    display: block;
+  }
+  .main-navigation {
     display: none;
   }
 }

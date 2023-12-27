@@ -23,7 +23,11 @@
                     'menu_class' => 'menu-class', // Classe CSS du menu (peut être personnalisée)
                     'container' => false, // Ne pas inclure de conteneur autour du menu
                 ));
-            ?> 
+            ?>
         </nav>
+        <div class="burger">
+            <img class="menu_burger" src="<?php echo get_stylesheet_directory_uri() . '/assets/img/menu.png' ?>">
+            <img class="croix_burger" src="<?php echo get_stylesheet_directory_uri() . '/assets/img/croix.png' ?>">
+        </div>
   </header>
 <?php wp_body_open(); ?>

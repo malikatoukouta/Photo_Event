@@ -21,7 +21,6 @@
         }
     }
 
-
 // When the user clicks on <span> (x), close the modal
     span.onclick = function () {
         modal.style.display = "none";
@@ -34,10 +33,30 @@
         }
     }
 
+// Menu burger
+    var openMenu = document.querySelector('.menu_burger');
+    var closeMenu = document.querySelector('.croix_burger');
+
+    openMenu.addEventListener('click', function(){
+        document.querySelector('.main-navigation').style.display="flex";
+        // Disparition du menu burger
+        document.querySelector('.menu_burger').style.display="none";
+        // Apparition de la croix
+        document.querySelector('.croix_burger').style.display="block";
+    });
+
+    closeMenu.addEventListener('click', function(){
+        document.querySelector('.main-navigation').style.display="none";
+        document.querySelector('.croix_burger').style.display="none";
+        document.querySelector('.menu_burger').style.display="block";
+    });
+
+// Formulaire pour récupérer Réf
     $('.contact-btn').click(function () {
         $('.wpcf7-form-control.wpcf7-tel.wpcf7-text.wpcf7-validates-as-tel.ref').val($('#reference-photo').text());
     });
 
+//Lightbox 
     var imageUrls = []; // Tableau pour stocker les URL des images
     var currentImageIndex = 0;
 
@@ -152,6 +171,5 @@
             }
         });
     }
-
 
 })(jQuery);
