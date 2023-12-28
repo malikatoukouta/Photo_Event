@@ -43,6 +43,7 @@ Text Domain: photoevent
     src: url('assets/fonts/poppins-v20-latin-300.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
 
+/* Header */
 header.header {
     display: flex;
     justify-content: space-around;
@@ -72,6 +73,7 @@ ol, ul {
     width: 70%;
 }
 
+/* Footer */
 .footer-menu {
     padding: 5px 0;
     text-align: center;
@@ -85,6 +87,7 @@ ol, ul {
     text-transform: uppercase;
 }
 
+/* Modale */
 .modal {
     display: none; 
     position: fixed; 
@@ -96,7 +99,20 @@ ol, ul {
     overflow: auto;
     background-color: rgb(0,0,0); 
     background-color: rgba(0,0,0,0.4);
+    animation: up 2s cubic-bezier(0.5, 0, 0, 1);
 }
+
+@keyframes up {
+  from {
+    opacity: 0;
+    transform: translate3d(0, 20%, 0);
+  }
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+
 .modal-content {
     background-color: #fefefe;
     margin: 15% auto;
@@ -117,6 +133,7 @@ img.contact-img {
     display: none;
 }
 
+/* Formulaire */
 input.wpcf7-form-control.wpcf7-submit.has-spinner {
     display: flex;
     justify-content: center;
@@ -261,6 +278,7 @@ h1 {
     width: 100%;
     display: flex;
     justify-content: center;
+    animation: up 3s cubic-bezier(0.5, 0, 0, 1);
 }
 
 /* Filtres */
@@ -454,6 +472,7 @@ h1 {
     display: none;
   }
 
+  /* Responsive */
 @media screen and (max-width: 800px) {
     .header.header {
       flex-direction: row;

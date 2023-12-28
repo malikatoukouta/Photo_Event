@@ -1,9 +1,9 @@
 (function ($) {
     'use strict';
-// Get the modal
+// Récupérer la modale
     var modal = document.getElementById('myModal');
 
-// Get the button that opens the modal
+// Boutons modale
     var btn = document.querySelector("a[href='#myModal']");
     var btnContact = document.querySelector('.contact-btn');
 
